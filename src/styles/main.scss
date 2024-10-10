@@ -51,6 +51,56 @@ header {
       }
     }
   }
+
+  .ham {
+
+    button {
+      margin-right: 2rem;
+      display: block;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    #hamburger-line-top {
+      transform-origin: top left;
+      transition-duration: 300ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #hamburger-line-mid {
+      transform-origin: center;
+      transition-duration: 300ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #hamburger-line-bottom {
+      transform-origin: bottom left;
+      transition-duration: 300ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hamburger-line {
+      margin: 0.5rem 0;
+      display: block;
+      width: 36px;
+      height: 4px;
+      background-color: white;
+    }
+
+    .hamburger-active > span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    
+    .hamburger-active > span:nth-child(2) {
+      transform: scale(0);
+    }
+    
+    .hamburger-active > span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+    
 }
 
 // hero section
@@ -214,14 +264,17 @@ footer {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 960px) {
-  article {
-    container: card/inline-size;
-  }
-  .article-body p {
-    display: none;
+@media screen and (max-width: 768px) {
+  nav {
+    position: absolute;
+    right: 4rem;
+    top: 100%;
+    width: 100%;
+    max-width: 250px;
+    // display: none;
   }
 }
+
 
 @container card (min-width: 380px) {
   .article-wrapper {
