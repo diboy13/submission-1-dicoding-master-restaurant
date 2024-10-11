@@ -2,65 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Apps</title>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <!-- Header section start -->
     <header>
       <div class="logo"><a href="#">Diboy Kitchen</a></div>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#">Favorite</a></li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/dicky-h-772a5b136/"
-              target="_blank"
-              >About Us</a
-            >
-          </li>
-        </ul>
+      <nav class="navbar">
+        <div class="navbar-nav">
+          <a href="">Home</a>
+          <a href="#">Favorite</a>
+          <a
+            href="https://www.linkedin.com/in/dicky-h-772a5b136/"
+            target="_blank"
+            >About Us</a
+          >
+        </div>
       </nav>
 
       <div class="ham">
-        <button
-        id="hamburger"
-        name="hamburger"
-        type="button"
-      >
-        <span
-          class="hamburger-line"
-          id="hamburger-line-top"
-        ></span>
-        <span
-          class="hamburger-line"
-          id="hamburger-line-mid"
-        ></span>
-        <span
-          class="hamburger-line"
-          id="hamburger-line-bottom"
-        ></span>
-      </button>
+        <button id="hamburger" name="hamburger" type="button">
+          <span class="hamburger-line" id="hamburger-line-top"></span>
+          <span class="hamburger-line" id="hamburger-line-mid"></span>
+          <span class="hamburger-line" id="hamburger-line-bottom"></span>
+        </button>
       </div>
-
-
-
-
-
     </header>
     <!-- Header section end -->
 
     <main>
       <!-- Hero section start -->
       <section class="hero">
-        <h1>Enjoy The Beautiful Art of Taste</h1>
+        <div>
+          <h1 tabindex="0">Enjoy The Beautiful Art of Taste</h1>
+        </div>
       </section>
       <!-- Hero section end -->
 
       <!-- menu section start -->
-      <section class="menu">
-        <div>
-          <h2 class="title-section">Our Menu</h2>
+      <section class="menu" id="maincontent">
+        <div tabindex="0" class="title-section">
+          <h2>Our Menu</h2>
         </div>
         <div class="menus"></div>
       </section>
@@ -69,16 +53,21 @@
 
       <!-- ccontent section start -->
       <section class="favorite">
-        <div>
-          <h2 class="title-section">Our Recomendation Restaurant</h2>
+        <div tabindex="0" class="title-section">
+          <h2>Our Recomendation Restaurant</h2>
         </div>
         <div class="articles"></div>
       </section>
       <!-- content section end -->
-
-      <footer>
-        <p>&copy; 2022 Diboy Kitchen. All rights reserved.</p>
-      </footer>
     </main>
+    <footer>
+      <p>&copy; 2022 Diboy Kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- to top section start -->
+    <a href="#" class="to-top hidden" id="to-top">
+      <span></span>
+    </a>
+    <!-- to top section end -->
   </body>
 </html>
