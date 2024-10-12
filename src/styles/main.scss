@@ -9,6 +9,7 @@ $text: white;
   outline: none;
   border: none;
   text-decoration: none;
+  font-family: Poppins, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -96,6 +97,11 @@ header {
       display: block;
       background-color: transparent;
       cursor: pointer;
+
+      .hamburger-menu {
+        position: absolute;
+        color: transparent;
+      }
     }
 
     #hamburger-line-top {
@@ -148,13 +154,14 @@ main {
     background-position: top;
 
     div {
-      padding-top: 25rem;
+      padding-top: 28rem;
       margin: 0 auto;
       width: fit-content;
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         color: $text;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        font-family: Allura, sans-serif;
       }
     }
   }
@@ -204,7 +211,7 @@ main {
       padding: 20px;
 
       .card-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-bottom: 20px;
         margin-top: 5px;
       }
@@ -341,6 +348,7 @@ footer {
     border-left-style: solid;
     border-top-color: white;
     border-left-color: white;
+    color: transparent;
   }
 }
 
@@ -380,10 +388,10 @@ footer {
   header {
     .navbar {
       position: absolute;
-      right: -100%;
-      top: 5.4rem;
+      display: none;
+      top: 6rem;
       width: 100%;
-      height: 300px;
+      height: full;
       max-width: 250px;
       background-color: white;
       border-radius: 12px;
@@ -406,7 +414,8 @@ footer {
       }
 
       &.active {
-        right: 2rem;
+        display: block;
+        right: 3rem;
       }
     }
 

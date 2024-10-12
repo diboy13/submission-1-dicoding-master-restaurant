@@ -38,9 +38,9 @@ window.addEventListener("click", (e) => {
 
 menu.menus.forEach((menu) => {
   menus.innerHTML += `
-<div class="card-menu" tabindex="0">
+<div class="card-menu" tabindex="0" data-aos="zoom-in" >
     <div class="card-image">
-      <img src="${menu.img}">
+      <img src="${menu.img}" alt="${menu.name}" />
     </div>
     <div class="card-text">
       <h2 class="card-title">${menu.name}</h2>
@@ -53,10 +53,11 @@ menu.menus.forEach((menu) => {
 
 data.restaurants.forEach((restaurant) => {
   articles.innerHTML += `
-    <article class="card-restaurant" tabindex="0">
+    <article class="card-restaurant" tabindex="0" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <div class="article-wrapper">
         <figure>
-          <img src="${restaurant.pictureId}" alt="" />
+          <img src="${restaurant.pictureId}" alt="${restaurant.name}" />
         </figure>
         <div class="article-body">
           <h2>${restaurant.name}</h2>
@@ -72,4 +73,4 @@ data.restaurants.forEach((restaurant) => {
 `;
 });
 
-console.log("Hello Coders! :)");
+AOS.init();
