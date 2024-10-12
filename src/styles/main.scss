@@ -101,11 +101,15 @@ header {
 
   .ham {
     display: none;
+
     button {
       margin-right: 2rem;
       display: block;
       background-color: transparent;
       cursor: pointer;
+      min-height: 46px;
+      min-width: 46px;
+      padding-inline: 0.5rem;
 
       .hamburger-menu {
         position: absolute;
