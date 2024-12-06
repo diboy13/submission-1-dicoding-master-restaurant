@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <meta name="theme-color" content="#DB0000" />
+    <link rel="manifest" href="./app.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +23,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <!-- Header section start -->
     <header>
       <div class="logo"><a href="#">Diboy Kitchen</a></div>
@@ -31,61 +34,25 @@
           <span class="hamburger-menu">menu</span>
         </button>
       </div>
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="navbar-nav">
-          <a href="">Home</a>
-          <a href="#">Favorite</a>
+          <a href="#/">Home</a>
           <a
             href="https://www.linkedin.com/in/dicky-h-772a5b136/"
             target="_blank"
             >About Us</a
           >
-          <a href="#maincontent">Our Menu</a>
-          <a href="#recomendation">Recomendation</a>
+          <a href="#/restaurant-list">Restaurant List</a>
+          <a href="#/favorite-restaurant">Favorite Restaurant</a>
         </div>
       </nav>
     </header>
     <!-- Header section end -->
 
-    <main>
-      <!-- Hero section start -->
-      <section class="hero">
-        <div>
-          <h1 tabindex="0" data-aos="fade-down" data-aos-duration="3000">
-            Enjoy The Beautiful Art of Taste
-          </h1>
-        </div>
-      </section>
-      <!-- Hero section end -->
-
-      <!-- menu section start -->
-      <section class="menu" id="maincontent">
-        <div tabindex="0" class="title-section">
-          <h2>Our Menu</h2>
-        </div>
-        <div class="menus"></div>
-      </section>
-
-      <!-- menu section end -->
-
-      <!-- ccontent section start -->
-      <section class="favorite" id="recomendation">
-        <div tabindex="0" class="title-section">
-          <h2>Our Recomendation Restaurant</h2>
-        </div>
-        <div class="articles"></div>
-      </section>
-      <!-- content section end -->
-    </main>
+    <main id="mainContent"></main>
     <footer>
       <p>&copy; 2022 Diboy Kitchen. All rights reserved.</p>
     </footer>
-
-    <!-- to top section start -->
-    <a href="#" class="to-top hidden" id="to-top">
-      <span>back to top</span>
-    </a>
-    <!-- to top section end -->
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
